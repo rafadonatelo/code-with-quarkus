@@ -13,4 +13,11 @@ public class ExampleResource {
     public String hello() {
         return "hello";
     }
+
+    @GET()
+    @Path("/retornaJSON")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String retonaDadosJson() {
+        return "testeJSON";
+    }
 }
